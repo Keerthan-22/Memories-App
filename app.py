@@ -7,7 +7,7 @@ import mimetypes
 
 app = Flask(__name__)
 app.config.from_pyfile('config.py')
-app.secret_key = '123'  # Should be a secure random key in production
+app.secret_key = '123'  # Should be a secure random key in production time
 
 # Flask-Login setup
 login_manager = LoginManager()
