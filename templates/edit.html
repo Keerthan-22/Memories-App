@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1 class="text-center mb-4">
+        <i class="fas fa-edit me-2"></i>Edit Memory
+    </h1>
+    <div class="card shadow-sm mx-auto" style="max-width: 600px;">
+        <div class="card-body p-4">
+            <form method="POST" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="photo" class="form-label">
+                        <i class="fas fa-image me-2"></i>New Photo (optional)
+                    </label>
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="fas fa-upload"></i>
+                        </span>
+                        <input type="file" class="form-control" id="photo" name="photo" accept="image/*">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="title" class="form-label">
+                        <i class="fas fa-heading me-2"></i>Title
+                    </label>
+                    <input type="text" class="form-control" id="title" name="title" value="{{ memory.title|default('Untitled', true) }}" required>
+                </div>
+                <div class="mb-3">
+                    <label for="date" class="form-label">
+                        <i class="fas fa-calendar me-2"></i>Date
+                    </label>
+                    <input type="date" class="form-control" id="date" name="date" value="{{ memory.date }}" required>
+                </div>
+                <div class="mb-3">
+                    <label for="description" class="form-label">
+                        <i class="fas fa-align-left me-2"></i>Description
+                    </label>
+                    <textarea class="form-control" id="description" name="description" rows="4" required>{{ memory.description }}</textarea>
+                </div>
+                <div class="d-flex justify-content-center gap-2 mt-4">
+                    <button type="submit" class="btn btn-primary btn-lg">
+                        <i class="fas fa-save me-2"></i>Save Changes
+                    </button>
+                    <a href="{{ url_for('index') }}" class="btn btn-outline-secondary btn-lg">
+                        <i class="fas fa-times me-2"></i>Cancel
+                    </a>
+                </div>
+            </form>
+        </div>
+        <div class="card-footer text-center p-4">
+            <h5 class="mb-3">
+                <i class="fas fa-image me-2"></i>Current Photo
+            </h5>
+            <div class="position-relative">
+                <img src="{{ url_for('serve_photo', photo_id=memory.photo_id|string) }}" 
+                     alt="{{ memory.title|default(memory.description, true) }}" 
+                     class="img-fluid rounded shadow-sm" 
+                     style="max-width: 300px; max-height: 200px; object-fit: contain;">
+            </div>
+        </div>
+    </div>
+{% endblock %}

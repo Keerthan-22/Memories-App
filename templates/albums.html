@@ -1,0 +1,11 @@
+<h2>My Albums</h2>
+{% for album in albums %}
+    <div>
+        <h3>{{ album.name }}</h3>
+        <a href="{{ url_for('view_album', album_id=album.id) }}">View Album</a>
+    </div>
+{% endfor %}
+@app.route('/album/<int:album_id>')
+def view_album(album_id):
+    album = Album.query.get_or_404(album_id)
+    return render_template('view_album.html', album=album)
