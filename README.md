@@ -55,12 +55,6 @@ Visit `http://localhost:3000` in your browser.
 
 ---
 
-## 📷 Screenshots
-
-(Add screenshots here if available)
-
----
-
 ## 📁 Folder Structure (Example)
 ```
 Memories-App/
