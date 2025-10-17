@@ -88,11 +88,7 @@ If you'd like to improve this project, feel free to fork the repo and submit a p
 
 ---
 
-## 📜 License
 
-This project is open-source and available under the [MIT License](LICENSE).
-
----
 
 ## 🙋‍♂️ Author
 
