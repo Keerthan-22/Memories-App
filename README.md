@@ -93,4 +93,4 @@ If you'd like to improve this project, feel free to fork the repo and submit a p
 ## 🙋‍♂️ Author
 
 **Keerthan M**  
-[GitHub](https://github.com/Keerthan-22) | [LinkedIn](https://www.linkedin.com/in/keerthan-m/)
+[GitHub](https://github.com/Keerthan-22) | [LinkedIn](https://www.linkedin.com/in/keerthanm/)
