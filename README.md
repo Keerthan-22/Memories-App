@@ -55,21 +55,6 @@ Visit `http://localhost:3000` in your browser.
 
 ---
 
-## 📁 Folder Structure (Example)
-```
-Memories-App/
-│
-├── public/             # Static assets
-├── src/                # Frontend source code
-│   ├── index.html
-│   ├── css/
-│   └── js/
-├── server/             # Backend logic (optional if applicable)
-├── uploads/            # Uploaded images
-├── .env                # Environment variables (if used)
-└── README.md
-```
-
 ---
 
 ## 🧠 Future Enhancements
