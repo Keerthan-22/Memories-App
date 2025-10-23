@@ -4,8 +4,6 @@ Create folders (albums) based on type, location, or date to manage your digital 
 
 Features
 - Upload and preview images
-- Organize photos into folders (albums)
-- Filter by type, location, or date
 - Light and dark mode
 - Minimal and responsive design
 
