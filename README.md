@@ -1,81 +1,48 @@
-# 📸 Memories App
+readme_text = """Memories App
 
-The **Memories App** is a photo management web application that allows users to upload, organize, and view images in a clean, user-friendly interface. Users can create folders (albums) based on type, location, or date, making it easier to manage their digital memories.
+A simple photo management web app to upload, organize, and view your images in a clean interface. 
+Create folders (albums) based on type, location, or date to manage your digital memories easily.
 
----
+Features
+- Upload and preview images
+- Organize photos into folders (albums)
+- Filter by type, location, or date
+- Light and dark mode
+- Minimal and responsive design
 
-## 🚀 Features
+Tech Stack
+Frontend: HTML, CSS, JavaScript
+Backend / Database: MongoDB (for image metadata and folder info)
 
-- 🖼️ Upload and preview images  
-- 📁 Organize photos into custom folders (albums)  
-- 🔍 Filter images by type, location, or date  
-- 🌙 Light and dark mode support  
-- 🎨 Minimal and responsive UI
+How to Run Locally
+1. Clone the repository
+   git clone https://github.com/Keerthan-22/Memories-App.git
+   cd Memories-App
 
----
+2. Install dependencies
+   npm install
 
-## 🛠️ Tech Stack
+3. Start MongoDB (if not running)
+   mongod
 
-**Frontend:**  
-- HTML  
-- CSS  
-- JavaScript
+4. Start the app
+   npm start
 
-**Backend / Database:**  
-- MongoDB (for storing image metadata and folder info)  
+5. Visit http://localhost:3000 in your browser.
 
----
+Future Enhancements
+- Add login/authentication
+- Share albums with others
+- Cloud storage (AWS S3, Firebase)
+- Tag-based image search
 
-## 🧪 How to Run the Project Locally
+Author
+Keerthan M
+GitHub: https://github.com/Keerthan-22
+LinkedIn: https://www.linkedin.com/in/keerthanm/
+"""
 
-> Make sure you have **Node.js** and **MongoDB** installed.
+with open("Memories_App_ReadMe.txt", "w") as file:
+    file.write(readme_text)
 
-### 1. Clone the repository
-```bash
-git clone https://github.com/Keerthan-22/Memories-App.git
-cd Memories-App
-```
-
-### 2. Install dependencies
-```bash
-npm install
-```
-
-### 3. Start MongoDB (if not running)
-```bash
-mongod
-```
-
-### 4. Start the app
-```bash
-npm start
-```
-
-Visit `http://localhost:3000` in your browser.
-
----
-
----
-
-## 🧠 Future Enhancements
-
-- Add login/authentication  
-- Enable sharing albums with others  
-- Cloud storage support (e.g., AWS S3 or Firebase)  
-- Tag-based image search  
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome!  
-If you'd like to improve this project, feel free to fork the repo and submit a pull request.
-
----
-
-
-
-## 🙋‍♂️ Author
-
-**Keerthan M**  
-[GitHub](https://github.com/Keerthan-22) | [LinkedIn](https://www.linkedin.com/in/keerthanm/)
+print("Memories_App_ReadMe.txt created successfully!")
