@@ -1,4 +1,3 @@
-readme_text = """Memories App
 
 A simple photo management web app to upload, organize, and view your images in a clean interface. 
 Create folders (albums) based on type, location, or date to manage your digital memories easily.
